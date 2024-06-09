@@ -5,52 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NerveTech Repair Services</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="text-center py-5 bg-light">
-        <h1>NerveTech Repair Services</h1>
-        <button class="btn btn-primary mt-3">Book Now</button>
-    </header>
-    
-    <section id="about" class="text-center py-5">
-        <div class="container">
-            <h2>Welcome to NerveTech</h2>
-            <p>We specialize in providing high-quality computer repair services tailored to meet your needs. Whether you’re facing a slow computer, unexpected crashes, or hardware malfunctions, our team of expert technicians is here to help.</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="9391714.png" alt="NerveTech Logo" class="d-inline-block align-top mr-2" style="height: 40px; margin-right: 3px;">
+            <span>NerveTech</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Our Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">More</a>
+                </li>
+                <li class="nav-item booking">
+                    <a class="nav-link" href="#">Booking</a>
+                </li>
+            </ul>
         </div>
-    </section>
+    </nav>
 
-    <section id="form" class="py-5">
-        <div class="container">
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="serviceType">Service Type</label>
-                        <input type="text" class="form-control" id="serviceType">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="firstName">First Name</label>
-                        <input type="text" class="form-control" id="firstName">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" class="form-control" id="lastName">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="comments">Comments</label>
-                    <textarea class="form-control" id="comments"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+    <header class="text-left py-5 bg-light header-background">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="header-content">
+                <h2 class="header-subtitle">Welcome to NerveTech</h2>
+                <p class="header-description">We specialize in providing high-quality computer repair services tailored to meet your needs. Whether you’re facing a slow computer, unexpected crashes, or hardware malfunctions, our team of expert technicians is here to help.</p>
+                <button class="btn btn-primary mt-3">Start Today</button>
+            </div>
+            <img src="your-image.jpg" alt="NerveTech Welcome" class="header-image">
         </div>
-    </section>
+    </header>
 
     <section id="services" class="py-5">
         <div class="container">
@@ -104,13 +98,44 @@
     <section id="confirmation" class="py-5 text-center">
         <div class="container">
             <h2>Booking is Confirmed!</h2>
-            <p>You have successfully booked an appointment for <span id="appointmentDate">(Date)</span>. More details are available in your email at <span id="appointmentEmail">(email)</span>.</p>
+            <p>You have successfully booked our services. Thank you for choosing NerveTech!</p>
+        </div>
+    </section>
+
+    <section id="form" class="py-5">
+        <div class="container">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="serviceType">Service Type</label>
+                        <input type="text" class="form-control" id="serviceType">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Comments</label>
+                    <textarea class="form-control" id="comments"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
