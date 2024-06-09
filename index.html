@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NerveTech Repair Services</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="text-center py-5 bg-light">
+        <h1>NerveTech Repair Services</h1>
+        <button class="btn btn-primary mt-3">Book Now</button>
+    </header>
+    
+    <section id="about" class="text-center py-5">
+        <div class="container">
+            <h2>Welcome to NerveTech</h2>
+            <p>We specialize in providing high-quality computer repair services tailored to meet your needs. Whether you’re facing a slow computer, unexpected crashes, or hardware malfunctions, our team of expert technicians is here to help.</p>
+        </div>
+    </section>
+
+    <section id="form" class="py-5">
+        <div class="container">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="serviceType">Service Type</label>
+                        <input type="text" class="form-control" id="serviceType">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Comments</label>
+                    <textarea class="form-control" id="comments"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Hardware Repair</h3>
+                    <p>$50-200</p>
+                    <button class="btn btn-secondary">Book now</button>
+                </div>
+                <div class="col-md-4">
+                    <h3>Software Repair</h3>
+                    <p>$65-80</p>
+                    <button class="btn btn-secondary">Book now</button>
+                </div>
+                <div class="col-md-4">
+                    <h3>PC Builds</h3>
+                    <p>$800-2000</p>
+                    <button class="btn btn-secondary">Book now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experts" class="py-5">
+        <div class="container">
+            <h2>Our Experts</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Our expert Janice, who works on hardware fixes</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Our expert Ryan, who works on hardware and software fixes</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Our expert Frank, who works on hardware and mobile fixes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 text-center">
+        <div class="container">
+            <h2>More Information and Contact</h2>
+            <p>Our Address is 8 Hiber Drive in Central Watson near Japantown. We are open from 9 am to 5 pm every day including holidays.</p>
+            <p>647-898-0324</p>
+            <p>nervetechservices@gmail.com</p>
+        </div>
+    </section>
+
+    <section id="confirmation" class="py-5 text-center">
+        <div class="container">
+            <h2>Booking is Confirmed!</h2>
+            <p>You have successfully booked an appointment for <span id="appointmentDate">(Date)</span>. More details are available in your email at <span id="appointmentEmail">(email)</span>.</p>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
