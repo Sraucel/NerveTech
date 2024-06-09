@@ -9,10 +9,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="9391714.png" alt="NerveTech Logo" class="d-inline-block align-top mr-2" style="height: 40px; margin-right: 3px;">
-            <span>NerveTech</span>
+            <img src="9391714.png" alt="NerveTech Logo" class="d-inline-block align-top mr-2" style="height: 40px;">
+            <div>
+                <span class="navbar-brand-name">NerveTech</span>
+                <br>
+                <span class="navbar-brand-subtitle">Repair Services</span>
+            </div>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,27 +27,24 @@
                     <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Our Services</a>
+                    <a class="nav-link" href="#">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">More</a>
+                    <a class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item booking">
-                    <a class="nav-link" href="#">Booking</a>
+                    <a class="nav-link" href="#" onclick="scrolltoform()" >Booking</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <header class="text-left py-5 bg-light header-background">
+    <header class="text-left py-5 header-background">
         <div class="container d-flex align-items-center justify-content-between">
             <div class="header-content">
-                <h2 class="header-subtitle">Welcome to NerveTech: </h2>
-                <p class="header-subdescription">Your trusted Tech Lifeline for your next Reboot, Revive or Rebuild.</p>
-                <br>
-                <p class="header-description">We specialize in providing high-quality computer repair services tailored to meet your needs. 
-                    Whether you’re facing a slow computer, unexpected crashes, or hardware malfunctions, our team of expert technicians is here to help.</p>
-                <button class="btn btn-primary mt-3">Start Today</button>
+                <h2 class="header-subtitle">Welcome to NerveTech</h2>
+                <p class="header-description">We specialize in providing high-quality computer repair services tailored to meet your needs. Whether you’re facing a slow computer, unexpected crashes, or hardware malfunctions, our team of expert technicians is here to help.</p>
+                <button class="btn btn-primary mt-3" onclick="scrolltoform()" >Start Today</button>
             </div>
             <img src="titlepage.jpg" alt="NerveTech Welcome" class="header-image">
         </div>
@@ -52,24 +53,25 @@
     <section id="services" class="py-5">
         <div class="container">
             <h2>Our Services</h2>
+            <br>
             <div class="row">
                 <div class="col-md-4">
                     <img src="hardware.jpg" alt="Hardware Repair" class="service-image">
                     <h3>Hardware Repair</h3>
                     <p>$50-200</p>
-                    <button class="btn btn-secondary">Book now</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('form').scrollIntoView();">Book now</button>
                 </div>
                 <div class="col-md-4">
-                    <img src="software.jpg" alt="Hardware Repair" class="service-image">
+                    <img src="software.jpg" alt="Software Repair" class="service-image">
                     <h3>Software Repair</h3>
                     <p>$65-80</p>
-                    <button class="btn btn-secondary">Book now</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('form').scrollIntoView();">Book now</button>
                 </div>
                 <div class="col-md-4">
-                    <img src="pc.png" alt="Hardware Repair" class="service-image">
+                    <img src="pc.png" alt="PC Builds" class="service-image">
                     <h3>PC Builds</h3>
                     <p>$800-2000</p>
-                    <button class="btn btn-secondary">Book now</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('form').scrollIntoView();">Book now</button>
                 </div>
             </div>
         </div>
@@ -78,42 +80,58 @@
     <section id="experts" class="py-5">
         <div class="container">
             <h2>Our Experts</h2>
+            <br>
             <div class="row">
                 <div class="col-md-4">
-                    <img src="janice.jpg" alt="Hardware Repair" class="expert-image">
+                    <img src="janice.jpg" alt="Janice" class="expert-image">
                     <p>Our expert Janice, who works on hardware fixes</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="ryan.jpg" alt="Hardware Repair" class="expert-image">
+                    <img src="ryan.jpg" alt="Ryan" class="expert-image">
                     <p>Our expert Ryan, who works on hardware and software fixes</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="frank.jpg" alt="Hardware Repair" class="expert-image">
+                    <img src="frank.jpg" alt="Frank" class="expert-image">
                     <p>Our expert Frank, who works on hardware and mobile fixes</p>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <section id="contact" class="py-5 text-center">
         <div class="container">
             <h2>More Information and Contact</h2>
-            <img src="map.png" alt="google maps" class="google-image">
-            <p>Our Address is 8 Hiber Drive in Central Watson near Japantown. We are open from 9 am to 5 pm every day including holidays.</p>
-            <p>647-898-0324</p>
-            <p>nervetechservices@gmail.com</p>
+            <br>
+            <br>
+            <div class="d-flex align-items-center justify-content-center">
+                <img src="map.png" alt="Google Maps" class="google-image mr-3">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <p>NerveTech is a service business with only one location in Watson, but we do plan to open locations in Heywood and Pacifica. We have been operating 
+                            for 7 years thanks to the hard work of all our experts.
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <p>Our address is 8 Hiber Drive (C4B 4U5) in Central Watson near Japantown. We are open from 9 am to 5 pm every day including holidays.</p>
+                    </div>
+                    <div class="contact-item">
+                        <p>647-898-0324</p>
+                    </div>
+                    <div class="contact-item">
+                        <p>nervetechservices@gmail.com</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="confirmation" class="py-5 text-center">
-        <div class="container">
-            <h2>Booking is Confirmed!</h2>
-            <p>You have successfully booked our services. Thank you for choosing NerveTech!</p>
-        </div>
-    </section>
+    
 
     <section id="form" class="py-5">
         <div class="container">
+            <h2>Appointment Booking</h2>
+            <br>
+            <br>
             <form>
                 <div class="form-row">
                     <div class="form-group col-md-6">
@@ -147,5 +165,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
