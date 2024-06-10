@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="9391714.png" alt="NerveTech Logo" class="d-inline-block align-top mr-2" style="height: 40px;">
+            <img src="img/9391714.png" alt="NerveTech Logo" class="d-inline-block align-top mr-2" style="height: 40px;">
             <div>
                 <span class="navbar-brand-name">NerveTech</span>
                 <br>
@@ -24,19 +24,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#contact">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Experts</a>
+                    <a class="nav-link" href="#experts">Experts</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item booking">
-                    <a class="nav-link" href="#" onclick="scrolltoform()" >Booking</a>
+                    <a class="nav-link" href="#form">Booking</a>
                 </li>
             </ul>
         </div>
@@ -47,9 +47,9 @@
             <div class="header-content">
                 <h2 class="header-subtitle">Welcome to NerveTech</h2>
                 <p class="header-description">We specialize in providing high-quality computer repair services tailored to meet your needs. Whether you’re facing a slow computer, unexpected crashes, or hardware malfunctions, our team of expert technicians is here to help.</p>
-                <button class="btn btn-primary mt-3" onclick="scrolltoform()" >Start Today</button>
+                <button class="btn btn-primary mt-3" onclick="document.getElementById('form').scrollIntoView({ behavior: 'smooth' });">Start Today</button>
             </div>
-            <img src="titlepage.jpg" alt="NerveTech Welcome" class="header-image">
+            <img src="img/titlepage.jpg" alt="NerveTech Welcome" class="header-image">
         </div>
     </header>
 
@@ -60,29 +60,29 @@
             <div class="row">
                 <div class="col-md-4" style="margin-bottom: 20px;">
                     <div class="service-container">
-                        <img src="hardware.jpg" alt="Hardware Repair" class="service-image">
+                        <img src="img/hardware.jpg" alt="Hardware Repair" class="service-image">
                         <h3>Hardware Repair</h3>
                         <p>Any hardware issues for all devices, price will be determined upon inspecting the device but range between $50-200</p>
                         <br>
-                        <button class="btn btn-secondary" onclick="document.getElementById('form').scrollIntoView();">Book now</button>
+                        <button class="btn btn-secondary" onclick="document.getElementById('form').scrollIntoView({ behavior: 'smooth' });">Book now</button>
                     </div>
                 </div>
                 <div class="col-md-4" style="margin-bottom: 20px;">
                     <div class="service-container">
-                        <img src="software.jpg" alt="Software Repair" class="service-image">
+                        <img src="img/software.jpg" alt="Software Repair" class="service-image">
                         <h3>Software Repair</h3>
                         <p>Any software issues for all devices, service can be anything from a simple reboot to a full OS reconstruction, generally $65-80</p>
                         <br>
-                        <button class="btn btn-secondary" onclick="document.getElementById('form').scrollIntoView();">Book now</button>
+                        <button class="btn btn-secondary" onclick="document.getElementById('form').scrollIntoView({ behavior: 'smooth' });">Book now</button>
                     </div>
                 </div>
                 <div class="col-md-4" style="margin-bottom: 20px;">
                     <div class="service-container">
-                        <img src="pc.png" alt="PC Builds" class="service-image">
+                        <img src="img/pc.png" alt="PC Builds" class="service-image">
                         <h3>PC Builds</h3>
                         <p>We can also custom build PC's for you, either starting from scratch or for you to pick the parts. Generally between $800-2000</p>
                         <br>
-                        <button class="btn btn-secondary" onclick="document.getElementById('form').scrollIntoView();">Book now</button>
+                        <button class="btn btn-secondary" onclick="document.getElementById('form').scrollIntoView({ behavior: 'smooth' });">Book now</button>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,6 @@
     </section>
     <br>
     
-
     <section id="experts" class="py-5">
         <div class="container">
             <h2>Our Experts</h2>
@@ -99,7 +98,7 @@
                 <div class="col-md-4">
                     <div class="expert-item">
                         <div class="expert-content">
-                            <img src="janice.jpg" alt="Janice" class="expert-image">
+                            <img src="img/janice.jpg" alt="Janice" class="expert-image">
                             <p>Our expert Janice, who works on hardware fixes</p>
                         </div>
                     </div>
@@ -107,7 +106,7 @@
                 <div class="col-md-4">
                     <div class="expert-item">
                         <div class="expert-content">
-                            <img src="ryan.jpg" alt="Ryan" class="expert-image">
+                            <img src="img/ryan.jpg" alt="Ryan" class="expert-image">
                             <p>Our expert Ryan, who works on hardware and software fixes</p>
                         </div>
                     </div>
@@ -115,7 +114,7 @@
                 <div class="col-md-4">
                     <div class="expert-item">
                         <div class="expert-content">
-                            <img src="frank.jpg" alt="Frank" class="expert-image">
+                            <img src="img/frank.jpg" alt="Frank" class="expert-image">
                             <p>Our expert Frank, who works on hardware and mobile fixes</p>
                         </div>
                     </div>
@@ -132,7 +131,7 @@
             <br>
             <br>
             <div class="d-flex align-items-center justify-content-center">
-                <img src="map.png" alt="Google Maps" class="google-image mr-3">
+                <img src="img/map.png" alt="Google Maps" class="google-image mr-3">
                 <div class="contact-info">
                     <div class="contact-item">
                         <p>NerveTech is a service business with only one location in Watson, but we do plan to open locations in Heywood and Pacifica. We have been operating 
@@ -186,7 +185,8 @@
                                 <input type="text" class="form-control" id="lastName">
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="email">Email</label>
+                                <label for="
+                                email">Email</label>
                                 <input type="email" class="form-control" id="email">
                             </div>
                         </div>
@@ -198,7 +198,7 @@
                     </form>
                 </div>
                 <div class="col-md-6">
-                    <img src="appointment_image.jpg" alt="Appointment Image" class="img-fluid">
+                    <img src="img/appointment_image.jpg" alt="Appointment Image" class="img-fluid">
                 </div>
             </div>
         </div>
