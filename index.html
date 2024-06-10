@@ -58,29 +58,38 @@
             <h2>Our Services</h2>
             <br>
             <div class="row">
-                <div class="col-md-4">
-                    <img src="hardware.jpg" alt="Hardware Repair" class="service-image">
-                    <h3>Hardware Repair</h3>
-                    <p>$50-200</p>
-                    <button class="btn btn-secondary" onclick="document.getElementById('form').scrollIntoView();">Book now</button>
+                <div class="col-md-4" style="margin-bottom: 20px;">
+                    <div class="service-container">
+                        <img src="hardware.jpg" alt="Hardware Repair" class="service-image">
+                        <h3>Hardware Repair</h3>
+                        <p>Any hardware issues for all devices, price will be determined upon inspecting the device but range between $50-200</p>
+                        <br>
+                        <button class="btn btn-secondary" onclick="document.getElementById('form').scrollIntoView();">Book now</button>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img src="software.jpg" alt="Software Repair" class="service-image">
-                    <h3>Software Repair</h3>
-                    <p>$65-80</p>
-                    <button class="btn btn-secondary" onclick="document.getElementById('form').scrollIntoView();">Book now</button>
+                <div class="col-md-4" style="margin-bottom: 20px;">
+                    <div class="service-container">
+                        <img src="software.jpg" alt="Software Repair" class="service-image">
+                        <h3>Software Repair</h3>
+                        <p>Any software issues for all devices, service can be anything from a simple reboot to a full OS reconstruction, generally $65-80</p>
+                        <br>
+                        <button class="btn btn-secondary" onclick="document.getElementById('form').scrollIntoView();">Book now</button>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img src="pc.png" alt="PC Builds" class="service-image">
-                    <h3>PC Builds</h3>
-                    <p>$800-2000</p>
-                    <button class="btn btn-secondary" onclick="document.getElementById('form').scrollIntoView();">Book now</button>
+                <div class="col-md-4" style="margin-bottom: 20px;">
+                    <div class="service-container">
+                        <img src="pc.png" alt="PC Builds" class="service-image">
+                        <h3>PC Builds</h3>
+                        <p>We can also custom build PC's for you, either starting from scratch or for you to pick the parts. Generally between $800-2000</p>
+                        <br>
+                        <button class="btn btn-secondary" onclick="document.getElementById('form').scrollIntoView();">Book now</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <br>
-    <br>
+    
 
     <section id="experts" class="py-5">
         <div class="container">
@@ -88,22 +97,36 @@
             <br>
             <div class="row">
                 <div class="col-md-4">
-                    <img src="janice.jpg" alt="Janice" class="expert-image">
-                    <p>Our expert Janice, who works on hardware fixes</p>
+                    <div class="expert-item">
+                        <div class="expert-content">
+                            <img src="janice.jpg" alt="Janice" class="expert-image">
+                            <p>Our expert Janice, who works on hardware fixes</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <img src="ryan.jpg" alt="Ryan" class="expert-image">
-                    <p>Our expert Ryan, who works on hardware and software fixes</p>
+                    <div class="expert-item">
+                        <div class="expert-content">
+                            <img src="ryan.jpg" alt="Ryan" class="expert-image">
+                            <p>Our expert Ryan, who works on hardware and software fixes</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <img src="frank.jpg" alt="Frank" class="expert-image">
-                    <p>Our expert Frank, who works on hardware and mobile fixes</p>
+                    <div class="expert-item">
+                        <div class="expert-content">
+                            <img src="frank.jpg" alt="Frank" class="expert-image">
+                            <p>Our expert Frank, who works on hardware and mobile fixes</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <br>
+    <br>
     
-    <section id="contact" class="py-5 text-center">
+    <section id="contact" class="py-5">
         <div class="container">
             <h2>More Information and Contact</h2>
             <br>
@@ -130,49 +153,54 @@
         </div>
     </section>
 
-    
-
     <section id="form" class="py-5">
         <div class="container">
             <h2>Appointment Booking</h2>
             <br>
             <br>
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="serviceType">Service Type</label>
-                        <select class="form-control" id="serviceType" onchange="updateExperts()">
-                            <option value="">Select Service</option>
-                            <option value="hardware">Hardware Repair</option>
-                            <option value="software">Software Repair</option>
-                            <option value="pc">PC Build</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="expert">Expert</label>
-                        <select class="form-control" id="expert"></select>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="firstName">First Name</label>
-                        <input type="text" class="form-control" id="firstName">
-                    </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <form class="text-left">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="serviceType">Service Type</label>
+                                <select class="form-control" id="serviceType" onchange="updateExperts()">
+                                    <option value="">Select Service</option>
+                                    <option value="hardware">Hardware Repair</option>
+                                    <option value="software">Software Repair</option>
+                                    <option value="pc">PC Build</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="expert">Expert</label>
+                                <select class="form-control" id="expert"></select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="comments">Comments</label>
+                            <textarea class="form-control" id="comments"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" class="form-control" id="lastName">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email">
-                    </div>
+                <div class="col-md-6">
+                    <img src="appointment_image.jpg" alt="Appointment Image" class="img-fluid">
                 </div>
-                <div class="form-group">
-                    <label for="comments">Comments</label>
-                    <textarea class="form-control" id="comments"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            </div>
         </div>
     </section>
 
@@ -181,4 +209,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
 </body>
+<footer class="py-4 text-center header-background text-white">
+    <div class="container">
+        <p>2024 NerveTech Inc</p>
+    </div>
+</footer>
 </html>
