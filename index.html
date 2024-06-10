@@ -4,41 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NerveTech Repair Services</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="img/9391714.png" alt="NerveTech Logo" class="d-inline-block align-top mr-2" style="height: 40px;">
-            <div>
-                <span class="navbar-brand-name">NerveTech</span>
-                <br>
-                <span class="navbar-brand-subtitle">Repair Services</span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/9391714.png" alt="NerveTech Logo" class="d-inline-block align-top mr-2" style="height: 40px;">
+                <div>
+                    <span class="navbar-brand-name">NerveTech</span>
+                    <br>
+                    <span class="navbar-brand-subtitle">Repair Services</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experts">Experts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item booking">
+                        <a class="nav-link" href="#form">Booking</a>
+                    </li>
+                </ul>
             </div>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#experts">Experts</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-                <li class="nav-item booking">
-                    <a class="nav-link" href="#form">Booking</a>
-                </li>
-            </ul>
         </div>
     </nav>
 
@@ -47,7 +49,7 @@
             <div class="header-content">
                 <h2 class="header-subtitle">Welcome to NerveTech</h2>
                 <p class="header-description">We specialize in providing high-quality computer repair services tailored to meet your needs. Whether you’re facing a slow computer, unexpected crashes, or hardware malfunctions, our team of expert technicians is here to help.</p>
-                <button class="btn btn-primary mt-3" onclick="document.getElementById('form').scrollIntoView({ behavior: 'smooth' });">Start Today</button>
+                <button class="btn btn-primary mt-3" onclick="scrolltoform()">Start Today</button>
             </div>
             <img src="img/titlepage.jpg" alt="NerveTech Welcome" class="header-image">
         </div>
@@ -64,7 +66,7 @@
                         <h3>Hardware Repair</h3>
                         <p>Any hardware issues for all devices, price will be determined upon inspecting the device but range between $50-200</p>
                         <br>
-                        <button class="btn btn-secondary" onclick="document.getElementById('form').scrollIntoView({ behavior: 'smooth' });">Book now</button>
+                        <button class="btn btn-secondary" onclick="scrolltoform()">Book now</button>
                     </div>
                 </div>
                 <div class="col-md-4" style="margin-bottom: 20px;">
@@ -73,7 +75,7 @@
                         <h3>Software Repair</h3>
                         <p>Any software issues for all devices, service can be anything from a simple reboot to a full OS reconstruction, generally $65-80</p>
                         <br>
-                        <button class="btn btn-secondary" onclick="document.getElementById('form').scrollIntoView({ behavior: 'smooth' });">Book now</button>
+                        <button class="btn btn-secondary" onclick="scrolltoform()">Book now</button>
                     </div>
                 </div>
                 <div class="col-md-4" style="margin-bottom: 20px;">
@@ -82,7 +84,7 @@
                         <h3>PC Builds</h3>
                         <p>We can also custom build PC's for you, either starting from scratch or for you to pick the parts. Generally between $800-2000</p>
                         <br>
-                        <button class="btn btn-secondary" onclick="document.getElementById('form').scrollIntoView({ behavior: 'smooth' });">Book now</button>
+                        <button class="btn btn-secondary" onclick="scrolltoform()">Book now</button>
                     </div>
                 </div>
             </div>
@@ -134,8 +136,8 @@
                 <img src="img/map.png" alt="Google Maps" class="google-image mr-3">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <p>NerveTech is a service business with only one location in Watson, but we do plan to open locations in Heywood and Pacifica. We have been operating 
-                            for 7 years thanks to the hard work of all our experts.
+                        <p>NerveTech is a service business with only one location in Watson, but we do plan to open locations in Heywood and Pacifica. We
+                            <p>have been operating for 7 years thanks to the hard work of all our experts.</p>
                         </p>
                     </div>
                     <div class="contact-item">
@@ -159,11 +161,11 @@
             <br>
             <div class="row">
                 <div class="col-md-6">
-                    <form class="text-left">
+                    <form id="appointmentForm" class="text-left">
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="serviceType">Service Type</label>
-                                <select class="form-control" id="serviceType" onchange="updateExperts()">
+                                <select class="form-select" id="serviceType" onchange="updateExperts()">
                                     <option value="">Select Service</option>
                                     <option value="hardware">Hardware Repair</option>
                                     <option value="software">Software Repair</option>
@@ -172,7 +174,7 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="expert">Expert</label>
-                                <select class="form-control" id="expert"></select>
+                                <select class="form-select" id="expert"></select>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="firstName">First Name</label>
@@ -185,8 +187,7 @@
                                 <input type="text" class="form-control" id="lastName">
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="
-                                email">Email</label>
+                                <label for="email">Email</label>
                                 <input type="email" class="form-control" id="email">
                             </div>
                         </div>
@@ -194,6 +195,7 @@
                             <label for="comments">Comments</label>
                             <textarea class="form-control" id="comments"></textarea>
                         </div>
+                        <br>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
@@ -204,14 +206,41 @@
         </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <div class="container mt-5">
+        <h2>Virtual Help Section</h2>
+        <br>
+        <p>Get virtual assistance from our experts. This is only for customers who have minor software 
+            issues that are unable to go to a store location. Please fill out the form below:</p>
+        <br>
+        <p>* Please note that once you submit, a zoom link will be sent to you. Please do not share this link with anyone. A representative
+            will be with you in approximately 5-10 minutes. Thank you for your patience.
+        </p>
+        <form id="helpForm">
+            <div class="mb-3">
+                <label for="helpName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="helpName" required>
+            </div>
+            <div class="mb-3">
+                <label for="helpEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="helpEmail" required>
+            </div>
+            <div class="mb-3">
+                <label for="helpMessage" class="form-label">How can we assist you?</label>
+                <textarea class="form-control" id="helpMessage" rows="3" required></textarea>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Submit Request</button>
+        </form>
+    </div>
+        
+    <footer class="py-4 text-center header-background text-white">
+        <div class="container">
+            <p>2024 NerveTech Inc</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
 </body>
-<footer class="py-4 text-center header-background text-white">
-    <div class="container">
-        <p>2024 NerveTech Inc</p>
-    </div>
-</footer>
 </html>
